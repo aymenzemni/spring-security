@@ -17,6 +17,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "*")
 @RestController
+@RequestMapping("/security")
 public class WelcomeController {
 
 
@@ -28,7 +29,6 @@ public class WelcomeController {
     private AuthenticationManager authenticationManager;
     @GetMapping("/welcome11")
     public String welcome() {
-
         return "welcome to the app !!!!!";
     }
 
